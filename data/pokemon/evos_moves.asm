@@ -350,7 +350,8 @@ GengarEvosMoves:
 ; Evolutions
 	db 0
 ; Learnset
-	db 40, DREAM_EATER
+	db 29, HYPNOSIS
+	db 38, DREAM_EATER
 	db 0
 
 NidoranFEvosMoves:
@@ -611,7 +612,7 @@ SlowpokeEvosMoves:
 
 KadabraEvosMoves:
 ; Evolutions
-	db EV_LEVEL, 32, ALAKAZAM
+	db EV_TRADE, 1, ALAKAZAM
 	db 0
 ; Learnset
 	db 16, CONFUSION
@@ -624,7 +625,7 @@ KadabraEvosMoves:
 
 GravelerEvosMoves:
 ; Evolutions
-	db EV_LEVEL, 34, GOLEM
+	db EV_TRADE, 1, GOLEM
 	db 0
 ; Learnset
 	db 11, DEFENSE_CURL
@@ -649,7 +650,7 @@ ChanseyEvosMoves:
 
 MachokeEvosMoves:
 ; Evolutions
-	db EV_LEVEL, 34, MACHAMP
+	db EV_TRADE, 1, MACHAMP
 	db 0
 ; Learnset
 	db 20, LOW_KICK
@@ -743,8 +744,12 @@ GolemEvosMoves:
 ; Evolutions
 	db 0
 ; Learnset
-	db 38, EARTHQUAKE
-	db 46, EXPLOSION
+	db 11, DEFENSE_CURL
+	db 16, ROCK_THROW
+	db 21, SELFDESTRUCT
+	db 29, HARDEN
+	db 36, EARTHQUAKE
+	db 43, EXPLOSION
 	db 0
 
 MissingNo32EvosMoves:
@@ -1491,9 +1496,11 @@ MachampEvosMoves:
 ; Evolutions
 	db 0
 ; Learnset
-	db 38, FOCUS_ENERGY
-	db 46, SEISMIC_TOSS
-	db 54, SUBMISSION
+	db 20, LOW_KICK
+	db 25, LEER
+	db 36, FOCUS_ENERGY
+	db 44, SEISMIC_TOSS
+	db 52, SUBMISSION
 	db 0
 
 MissingNo7FEvosMoves:
@@ -1677,7 +1684,7 @@ MissingNo92EvosMoves:
 
 HaunterEvosMoves:
 ; Evolutions
-	db EV_LEVEL, 32, GENGAR
+	db EV_TRADE, 1, GENGAR
 	db 0
 ; Learnset
 	db 29, HYPNOSIS
@@ -1695,8 +1702,12 @@ AlakazamEvosMoves:
 ; Evolutions
 	db 0
 ; Learnset
-	db 40, PSYCHIC_M
-	db 44, REFLECT
+	db 16, CONFUSION
+	db 20, DISABLE
+	db 27, PSYBEAM
+	db 31, RECOVER
+	db 38, PSYCHIC_M
+	db 42, REFLECT
 	db 0
 
 PidgeottoEvosMoves:
