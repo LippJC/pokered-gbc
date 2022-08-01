@@ -798,13 +798,11 @@ FaintEnemyPokemon:
 	jr .sfxplayed
 .wild_win
 	call EndLowHealthAlarm
-	call AnyPartyAlive
-	ld a, d
-	and a
-	push af
 	ld a, MUSIC_DEFEATED_WILD_MON
-	call nz, PlayBattleVictoryMusic
+	call PlayBattleVictoryMusic
 .sfxplayed
+; bug: win sfx is played for wild battles before checking for player mon HP
+; this can lead to odd scenarios where both player and enemy faint, as the win sfx plays yet the player never won the battle
 	ld hl, wBattleMonHP
 	ld a, [hli]
 	or [hl]
@@ -814,7 +812,9 @@ FaintEnemyPokemon:
 	jr nz, .playermonnotfaint ; if so, don't call RemoveFaintedPlayerMon twice
 	call RemoveFaintedPlayerMon
 .playermonnotfaint
-	pop af
+	call AnyPartyAlive
+	ld a, d
+	and a
 	ret z
 	ld hl, EnemyMonFaintedText
 	call PrintText
