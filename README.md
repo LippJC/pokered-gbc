@@ -1,5 +1,35 @@
 # Pokémon Red and Blue [![Build Status][travis-badge]][travis]
 
+NewBugFix Updates:
+- 1/256 %
+- Substitute
+- Dual Type
+- PP Restore Moves
+- Struggle Fix
+- Cool Trainer F
+- Blaine
+- Transformed Pokemon
+- Status Curing for Items
+- Move Swap Sound
+- Focus Energy
+- Cinnabar Island
+- Surges Trash Cans
+- NPC Overworld Movement
+- Slot Machine Stop on 7 / Slots stops on two 7s
+- Bad Emu ED tile
+
+- Lower Right Tile Fix
+- Lucky Slot Fix
+- Battle Victory Music
+- Audio Engine Freq
+- Articuno Cry / Fossil Cry
+- Prof Oak Intro
+- Prof Oak Text
+- Player Direction
+
+
+
+
 This is a disassembly of Pokémon Red and Blue.
 
 It builds the following ROMs:
