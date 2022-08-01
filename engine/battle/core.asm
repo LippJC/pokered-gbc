@@ -4609,6 +4609,7 @@ CriticalHitTest:
 	call GetMonHeader
 	ld a, [wMonHBaseSpeed]
 	ld b, a
+	srl b                        ; (effective (base speed/2))
 	ldh a, [hWhoseTurn]
 	and a
 	ld hl, wPlayerMovePower
@@ -4624,15 +4625,14 @@ CriticalHitTest:
 	ld c, [hl]                   ; read move id
 	ld a, [de]
 	bit GETTING_PUMPED, a         ; test for focus energy
-	jr z, .noFocusEnergyUsed
-	sla b                        ; (effective (base speed*2)
+	jr nz, .focusEnergyUsed      ; bug: using focus energy causes a shift to the right instead of left,
+	                             ; resulting in 1/4 the usual crit chance
+	sla b                        ; (effective (base speed/2)*2)
 	jr nc, .noFocusEnergyUsed
 	ld b, $ff                    ; cap at 255/256
 	jr .noFocusEnergyUsed
 .focusEnergyUsed
-	sla b                        ; (effective ((base speed*2)*2))
-	jr nc, .noFocusEnergyUsed
-	ld b, $ff                    ; cap at 255/256
+	srl b
 .noFocusEnergyUsed
 	ld hl, HighCriticalMoves     ; table of high critical hit moves
 .Loop

@@ -1,22 +1,5 @@
 # Pokémon Red and Blue [![Build Status][travis-badge]][travis]
 
-Changelog from Pokémon:
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 This is a disassembly of Pokémon Red and Blue.
 
 It builds the following ROMs:
