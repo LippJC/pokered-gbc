@@ -20,9 +20,16 @@ GetName::
 
 	; TM names are separate from item names.
 	; BUG: This applies to all names instead of just items.
+	push bc
+	ld b, a
+	ld a, [wNameListType]
+	cp ITEM_NAME
+	ld a, b
+	pop bc
+	jr nz, .notMachine
 	cp HM01
 	jp nc, GetMachineName
-
+.notMachine
 	ldh a, [hLoadedROMBank]
 	push af
 	push hl
