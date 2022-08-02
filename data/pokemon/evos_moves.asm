@@ -1071,17 +1071,34 @@ PikachuEvosMoves:
 	db EV_ITEM, THUNDER_STONE, 1, RAICHU
 	db 0
 ; Learnset
-	db 9, THUNDER_WAVE
-	db 16, QUICK_ATTACK
+	db 6, TAIL_WHIP
+	db 8, THUNDER_WAVE
+	db 11, QUICK_ATTACK
+	db 15, DOUBLE_TEAM
+	db 20, SLAM
 	db 26, SWIFT
+	db 29, THUNDERBOLT
 	db 33, AGILITY
 	db 43, THUNDER
+	db 41, THUNDER
+	db 50, LIGHT_SCREEN
 	db 0
 
 RaichuEvosMoves:
 ; Evolutions
 	db 0
 ; Learnset
+	db 6, TAIL_WHIP
+	db 8, THUNDER_WAVE
+	db 11, QUICK_ATTACK
+	db 15, DOUBLE_TEAM
+	db 20, SLAM
+	db 26, SWIFT
+	db 29, THUNDERBOLT
+	db 33, AGILITY
+	db 43, THUNDER
+	db 41, THUNDER
+	db 50, LIGHT_SCREEN
 	db 0
 
 MissingNo56EvosMoves:
