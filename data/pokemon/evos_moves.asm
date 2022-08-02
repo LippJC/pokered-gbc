@@ -2184,4 +2184,8 @@ VictreebelEvosMoves:
 	db 13, WRAP
 	db 15, POISONPOWDER
 	db 18, SLEEP_POWDER
+	db 23, STUN_SPORE
+	db 29, ACID
+	db 38, RAZOR_LEAF
+	db 49, SLAM
 	db 0
