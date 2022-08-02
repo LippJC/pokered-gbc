@@ -1,14 +1,27 @@
 Route22Mons:
 	db 25 ; grass encounter rate
 	db  3, RATTATA
-	db  4, NIDORAN_M ; 19.9
+IF DEF(_RED)
+	db  3, NIDORAN_M
 	db  4, RATTATA
+	db  4, NIDORAN_M
+	db  2, RATTATA
+	db  2, NIDORAN_M
 	db  3, SPEAROW
-	db  4, RATTATA   ; 44.9
+	db  5, SPEAROW
 	db  3, NIDORAN_F
-	db  2, PIDGEY
-	db  5, NIDORAN_F ; 14.9
-	db  3, PIDGEY    ;  9.4
-	db  6, SPEAROW   ; 11.0
+	db  4, NIDORAN_F
+ENDC
+IF DEF(_BLUE)
+	db  3, NIDORAN_F
+	db  4, RATTATA
+	db  4, NIDORAN_F
+	db  2, RATTATA
+	db  2, NIDORAN_F
+	db  3, SPEAROW
+	db  5, SPEAROW
+	db  3, NIDORAN_M
+	db  4, NIDORAN_M
+ENDC
 
 	db 0 ; water encounter rate
