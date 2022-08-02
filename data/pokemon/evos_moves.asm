@@ -309,7 +309,13 @@ ExeggutorEvosMoves:
 ; Evolutions
 	db 0
 ; Learnset
-	db 28, STOMP
+	db 25, REFLECT
+	db 28, LEECH_SEED
+	db 30, STOMP
+	db 32, STUN_SPORE
+	db 37, POISONPOWDER
+	db 42, SOLARBEAM
+	db 48, SLEEP_POWDER
 	db 0
 
 LickitungEvosMoves:
