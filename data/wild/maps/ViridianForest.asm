@@ -8,7 +8,7 @@ ForestMons:
 	db  4, METAPOD
 	db  5, METAPOD  ; 14.9
 	db  5, PIKACHU  ;  5.1
-	db  8, PIDGY    ;  4.3
+	db  8, PIDGEY   ;  4.3
 	db  9, PIDGEOTTO;  1.2
 
 	db 0 ; water encounter rate
