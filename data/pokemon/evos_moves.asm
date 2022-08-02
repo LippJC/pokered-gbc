@@ -1661,7 +1661,12 @@ CloysterEvosMoves:
 ; Evolutions
 	db 0
 ; Learnset
-	db 50, SPIKE_CANNON
+	db 18, SUPERSONIC
+	db 23, CLAMP
+	db 30, AURORA_BEAM
+	db 39, LEER
+	db 45, SPIKE_CANNON
+	db 50, ICE_BEAM	
 	db 0
 
 MissingNo8CEvosMoves:
