@@ -222,11 +222,11 @@ NidoranMEvosMoves:
 	db 0
 ; Learnset
 	db 8, HORN_ATTACK
+	db 12, DOUBLE_KICK
 	db 14, POISON_STING
 	db 21, FOCUS_ENERGY
 	db 29, FURY_ATTACK
 	db 36, HORN_DRILL
-	db 43, DOUBLE_KICK
 	db 0
 
 ClefairyEvosMoves:
@@ -271,8 +271,11 @@ NidokingEvosMoves:
 	db 0
 ; Learnset
 	db 8, HORN_ATTACK
+	db 12, DOUBLE_KICK
 	db 14, POISON_STING
-	db 23, THRASH
+	db 23, FOCUS_ENERGY
+	db 32, FURY_ATTACK
+	db 41, HORN_DRILL
 	db 0
 
 SlowbroEvosMoves:
@@ -1909,11 +1912,11 @@ NidorinoEvosMoves:
 	db 0
 ; Learnset
 	db 8, HORN_ATTACK
+	db 12, DOUBLE_KICK
 	db 14, POISON_STING
 	db 23, FOCUS_ENERGY
 	db 32, FURY_ATTACK
 	db 41, HORN_DRILL
-	db 50, DOUBLE_KICK
 	db 0
 
 NidorinaEvosMoves:
