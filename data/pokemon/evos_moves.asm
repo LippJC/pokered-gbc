@@ -2135,6 +2135,9 @@ VileplumeEvosMoves:
 	db 15, POISONPOWDER
 	db 17, STUN_SPORE
 	db 19, SLEEP_POWDER
+	db 28, ACID
+	db 38, PETAL_DANCE
+	db 52, SOLARBEAM
 	db 0
 
 BellsproutEvosMoves:
