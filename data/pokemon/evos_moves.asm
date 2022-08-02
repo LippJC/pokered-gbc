@@ -1800,6 +1800,13 @@ StarmieEvosMoves:
 ; Evolutions
 	db 0
 ; Learnset
+	db 17, WATER_GUN
+	db 22, HARDEN
+	db 27, RECOVER
+	db 32, SWIFT
+	db 37, MINIMIZE
+	db 42, LIGHT_SCREEN
+	db 47, HYDRO_PUMP
 	db 0
 
 BulbasaurEvosMoves:
