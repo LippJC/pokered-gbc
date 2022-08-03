@@ -9,6 +9,6 @@ Route11Mons:
 	db 18, PIDGEOTTO
 	db 20, PIDGEOTTO; 10.2
 	db 11, DROWZEE
-	db 22; DROWZEE  ; 15.3
+	db 22, DROWZEE  ; 15.3
 
 	db 0 ; water encounter rate
