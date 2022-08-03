@@ -1,53 +1,32 @@
 # Pokémon Red and Blue [![Build Status][travis-badge]][travis]
 
-<<<<<<< Updated upstream
-Changelog from Pokémon:
+NewBugFix Updates:
+- 1/256 %
+- Substitute
+- Dual Type
+- PP Restore Moves
+- Struggle Fix
+- Cool Trainer F
+- Blaine
+- Transformed Pokemon
+- Status Curing for Items
+- Move Swap Sound
+- Focus Energy
+- Cinnabar Island
+- Surges Trash Cans
+- NPC Overworld Movement
+- Slot Machine Stop on 7 / Slots stops on two 7s
+- Bad Emu ED tile
 
+- Lower Right Tile Fix
+- Lucky Slot Fix
+- Battle Victory Music
+- Audio Engine Freq
+- Articuno Cry / Fossil Cry
+- Prof Oak Intro
+- Prof Oak Text
+- Player Direction
 
-
-
-
-
-
-
-
-
-
-
-
-=======
-Changelog of Bug Fixes:
-- 100% Accuracy Miss Glitch
-- Substitute 0 HP Glitch
-- Dual-Type Effectiveness Misreported
-- HP Drain Hit Glitch
-- PP Restore Glitch
-- Bide Damage in Link Battles
-- Struggle PP up Glitch
-- Cool Trainer F AI Swap Pokemon Glitch
-- Blaine Super Potion AI Glitch
-- Transform Pokemon Ditto Glitch
-- Status Curing Items Remove Stat Modifiers Glitch
-
-- Cinnabar Island / MissingNo Glitch
-- Lt. Surge Trash Can Glitch
-- NPC Overworld Walking Glitch
-- NPC Movement Delay
-- Trainer Battle Text Overwrite Glitch***
-- Erroneous Stone Evolutions can Pokemon to evolve glitch
-- Smoke from Strength not showing up***
-- Surf Collision Check Glitch
-- Slot Machine 7s Glitches
-- GetName HM/TM Fix***
-- "ED" Tile on bad emulators fix
-- 
-
-- not in yet:
-- Random Items Cause Evolution
-- wd732 Cycling***
-- Move Swap Sound????
-- EXP All????
->>>>>>> Stashed changes
 
 
 
