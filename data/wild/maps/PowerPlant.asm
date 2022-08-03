@@ -1,20 +1,14 @@
 PowerPlantMons:
 	db 10 ; grass encounter rate
-	db 21, VOLTORB
-	db 21, MAGNEMITE
-	db 20, PIKACHU
-	db 24, PIKACHU
-	db 23, MAGNEMITE
-	db 23, VOLTORB
-	db 32, MAGNETON
+	db 30, MAGNEMITE ; 19.9
+	db 33, VOLTORB	 ; 19.9
+	db 30, PIKACHU	 ; 15.2
+	db 33, KOFFING	 ;  9.8
 	db 35, MAGNETON
-IF DEF(_RED)
-	db 33, ELECTABUZZ
-	db 36, ELECTABUZZ
-ENDC
-IF DEF(_BLUE)
-	db 33, RAICHU
-	db 36, RAICHU
-ENDC
+	db 35, GRIMER	 ;  9.8
+	db 36, ELECTABUZZ;  5.1
+	db 36, RAICHU	 ;  5.1
+	db 38, MAGNETON	 ; 14.1
+	db 40, MUK		 ;  1.2
 
 	db 0 ; water encounter rate
