@@ -9,6 +9,6 @@ Route5Mons:
 	db 15, ODDISH    ; 24.7
 	db 16, BELLSPROUT; 24.7
 	db 15, MEOWTH	 ; 14.1
-	db 17, GLOOM	 ;  1.2
+	db 18, GLOOM	 ;  1.2
 
 	db 0 ; water encounter rate
