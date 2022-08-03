@@ -616,7 +616,7 @@ KadabraEvosMoves:
 	db 0
 ; Learnset
 	db 16, CONFUSION
-	db 18, KENESIS
+	db 18, KINESIS
 	db 20, DISABLE
 	db 27, PSYBEAM
 	db 31, RECOVER
