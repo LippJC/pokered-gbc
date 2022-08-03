@@ -5,7 +5,7 @@ Route13Mons:
 	db 27, PIDGEY	 ; 35.1
 	db 26, BELLSPROUT;  9.8
 	db 26, ODDISH	 ;  9.8
-	db 26, PIGEOTTO	 ;  9.8
+	db 26, PIDGEOTTO ;  9.8
 	db 28, GLOOM	 ;  5.1
 	db 28, WEEPINBELL;  5.1
 	db 25, DITTO
