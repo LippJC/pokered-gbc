@@ -12,3 +12,4 @@ Route22Mons:
 	db  6, SPEAROW   ; 11.0
 
 	db 0 ; water encounter rate
+	
