@@ -6,7 +6,7 @@ MansionMons2:
 	db 34, GROWLITHE
 	db 30, RATTATA
 	db 30, RATICATE
-	db 34, NINETAILS
+	db 34, NINETALES
 	db 34, ARCANINE
 	db 36, MAGMAR
 	db 39, MAGMAR

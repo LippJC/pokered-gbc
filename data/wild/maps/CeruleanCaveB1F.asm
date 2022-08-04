@@ -8,7 +8,7 @@ DungeonMonsB1:
 	db 64, GOLDUCK
 	db 57, SANDSLASH
 	db 65, ALAKAZAM
-	db 63, NINETAILS
+	db 63, NINETALES
 	db 67, DRAGONITE
 
 	db 0 ; water encounter rate
