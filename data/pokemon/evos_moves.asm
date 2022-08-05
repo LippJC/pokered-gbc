@@ -213,6 +213,7 @@ KangaskhanEvosMoves:
 	db 31, TAIL_WHIP
 	db 36, MEGA_PUNCH
 	db 41, LEER
+	db 43, HI_JUMP_KICK
 	db 46, DIZZY_PUNCH
 	db 0
 
@@ -324,6 +325,7 @@ LickitungEvosMoves:
 ; Learnset
 	db 7, STOMP
 	db 15, DISABLE
+	db 20, LICK
 	db 23, DEFENSE_CURL
 	db 31, SLAM
 	db 39, SCREECH
@@ -498,11 +500,15 @@ ScytherEvosMoves:
 ; Evolutions
 	db 0
 ; Learnset
+	db 10, KARATE_CHOP
 	db 17, LEER
 	db 20, FOCUS_ENERGY
 	db 24, DOUBLE_TEAM
 	db 29, SLASH
+	db 32, CONFUSION
 	db 35, SWORDS_DANCE
+	db 38, RAZOR_WIND
+	db 40, MEDITATE
 	db 42, AGILITY
 	db 50, WING_ATTACK
 	db 0
@@ -576,7 +582,7 @@ GrowlitheEvosMoves:
 	db EV_ITEM, FIRE_STONE, 1, ARCANINE
 	db 0
 ; Learnset
-	db 18, EMBER
+	db 12, EMBER
 	db 23, LEER
 	db 30, TAKE_DOWN
 	db 39, AGILITY
@@ -587,6 +593,7 @@ OnixEvosMoves:
 ; Evolutions
 	db 0
 ; Learnset
+	db 10, HORN_ATTACK
 	db 15, BIND
 	db 19, ROCK_THROW
 	db 25, RAGE
@@ -721,7 +728,9 @@ ArbokEvosMoves:
 ; Learnset
 	db 10, POISON_STING
 	db 17, BITE
+	db 24, HYPER_FANG
 	db 27, GLARE
+	db 30, AGILITY
 	db 36, SCREECH
 	db 47, ACID
 	db 0
@@ -911,9 +920,11 @@ FarfetchdEvosMoves:
 	db 0
 ; Learnset
 	db 7, LEER
+	db 10, FOCUS_ENERGY
 	db 15, FURY_ATTACK
 	db 23, SWORDS_DANCE
 	db 31, AGILITY
+	db 36, WING_ATTACK
 	db 39, SLASH
 	db 0
 
@@ -1385,6 +1396,7 @@ EkansEvosMoves:
 ; Learnset
 	db 10, POISON_STING
 	db 17, BITE
+	db 20, HYPER_FANG
 	db 24, GLARE
 	db 31, SCREECH
 	db 38, ACID
@@ -1450,8 +1462,10 @@ BeedrillEvosMoves:
 	db 16, FOCUS_ENERGY
 	db 20, TWINEEDLE
 	db 25, RAGE
+	db 28, SHARPEN
 	db 30, PIN_MISSILE
 	db 35, AGILITY
+	db 40, ACID_ARMOR
 	db 0
 
 MissingNo73EvosMoves:
