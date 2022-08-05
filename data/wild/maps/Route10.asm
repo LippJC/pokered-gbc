@@ -1,25 +1,14 @@
 Route10Mons:
 	db 15 ; grass encounter rate
-	db 16, VOLTORB
-	db 16, SPEAROW
-	db 14, VOLTORB
-IF DEF(_RED)
-	db 11, EKANS
-	db 13, SPEAROW
-	db 15, EKANS
-	db 17, VOLTORB
-	db 17, SPEAROW
-	db 13, EKANS
-	db 17, EKANS
-ENDC
-IF DEF(_BLUE)
-	db 11, SANDSHREW
-	db 13, SPEAROW
-	db 15, SANDSHREW
-	db 17, VOLTORB
-	db 17, SPEAROW
-	db 13, SANDSHREW
-	db 17, SANDSHREW
-ENDC
+	db 16, VOLTORB  ; 19.9
+	db 16, MAGNEMITE; 19.9
+	db 15, EKANS	; 15.2
+	db 17, NIDORAN_M;  9.8
+	db 17, NIDORAN_F;  9.8
+	db 17, SPEAROW	;  9.8
+	db 18, NIDORINO ;  5.1
+	db 18, NIDORINA ;  5.1
+	db 18, MACHOP
+	db 20, MACHOP	;  5.5
 
 	db 0 ; water encounter rate

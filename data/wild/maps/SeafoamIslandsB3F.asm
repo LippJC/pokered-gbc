@@ -1,27 +1,14 @@
 IslandMonsB3:
 	db 10 ; grass encounter rate
-IF DEF(_RED)
-	db 31, SLOWPOKE
-	db 31, SEEL
-	db 33, SLOWPOKE
-	db 33, SEEL
-	db 29, HORSEA
-	db 31, SHELLDER
-	db 31, HORSEA
-	db 29, SHELLDER
-	db 39, SEADRA
-ENDC
-IF DEF(_BLUE)
-	db 31, PSYDUCK
-	db 31, SEEL
-	db 33, PSYDUCK
-	db 33, SEEL
-	db 29, KRABBY
 	db 31, STARYU
-	db 31, KRABBY
-	db 29, STARYU
-	db 39, KINGLER
-ENDC
-	db 37, DEWGONG
+	db 31, HORSEA
+	db 33, SHELLDER
+	db 33, ZUBAT
+	db 29, SEEL
+	db 31, GOLBAT
+	db 31, KINGLER
+	db 31, DEWGONG
+	db 37, SEADRA
+	db 37, STARMIE
 
 	db 0 ; water encounter rate

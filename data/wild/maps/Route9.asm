@@ -1,25 +1,14 @@
 Route9Mons:
 	db 15 ; grass encounter rate
-	db 16, RATTATA
-	db 16, SPEAROW
-	db 14, RATTATA
-IF DEF(_RED)
-	db 11, EKANS
-	db 13, SPEAROW
-	db 15, EKANS
-	db 17, RATTATA
-	db 17, SPEAROW
-	db 13, EKANS
-	db 17, EKANS
-ENDC
-IF DEF(_BLUE)
-	db 11, SANDSHREW
-	db 13, SPEAROW
-	db 15, SANDSHREW
-	db 17, RATTATA
-	db 17, SPEAROW
-	db 13, SANDSHREW
-	db 17, SANDSHREW
-ENDC
+	db 16, NIDORAN_M; 19.9
+	db 16, NIDORAN_F; 19.9
+	db 17, RATTATA  ; 15.2
+	db 18, EKANS    ;  9.8
+	db 18, SANDSHREW;  9.8
+	db 17, SPEAROW	;  9.8
+	db 19, NIDORINO ;  5.1
+	db 19, NIDORINA ;  5.1
+	db 20, RATICATE ;  4.3
+	db 22, FEAROW	;  1.2
 
 	db 0 ; water encounter rate
