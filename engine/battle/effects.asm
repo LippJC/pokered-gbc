@@ -1281,6 +1281,29 @@ SplashEffect:
 	call PlayCurrentMoveAnimation
 	jp PrintNoEffectText
 
+FlashEffect:
+    ;values for the enemy's turn
+    ld de, wPlayerMoveEffect
+    ldh a, [hWhoseTurn]
+    and a
+    jr z, .next
+    ; values for the player's turn
+    ld de, wEnemyMoveEffect
+.next
+    ld a, ACCURACY_DOWN1_EFFECT
+    ld [de], a
+    push de
+    call StatModifierDownEffect ; stat lowering function
+    pop de
+    ld a, SPECIAL_UP1_EFFECT
+    ld [de], a
+    push de
+    call StatModifierUpEffect ; stat raising function
+    pop de
+    ld a, FLASH_EFFECT
+    ld [de], a
+    ret
+
 DisableEffect:
 	call MoveHitTest
 	ld a, [wMoveMissed]
