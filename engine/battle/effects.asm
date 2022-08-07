@@ -194,13 +194,13 @@ ExplodeEffect:
 TriAttackEffect:
 	ld b, BURN_SIDE_EFFECT1
 	ld a, [hRandomSub] ; grab a random number
-	cp 29 ; 29 / 256 chance = 11%
+	cp 34 ; 34 / 256 chance = 13.2%
 	jr c, .gotStatusEffect
 	inc b ; FREEZE_SIDE_EFFECT
-	cp 58 ; (58-29) / 256 chance = 11%
+	cp 68 ; (68-34) / 256 chance = 13.2%
 	jr c, .gotStatusEffect
 	inc b ; PARALYZE_SIDE_EFFECT1
-	cp 87 ; (87-58) / 256 chance = 11%
+	cp 102 ; (102-68) / 256 chance = 13.2%
 	jr c, .gotStatusEffect
 .gotStatusEffect
 	ld a, [H_WHOSETURN] ; check if it is the player's turn or the opponent's
