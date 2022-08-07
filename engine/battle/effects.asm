@@ -203,7 +203,7 @@ TriAttackEffect:
 	cp 87 ; (87-58) / 256 chance = 11%
 	jr c, .gotStatusEffect
 .gotStatusEffect
-	ld a, [H_WHOSETURN] ; check if it is the player's turn or the opponent's
+	ld a, [hWhoseTurn] ; check if it is the player's turn or the opponent's
 	and a
 	ld a, b ; get the effect we chose earlier
 	jr nz, .opponent
