@@ -190,6 +190,29 @@ ExplodeEffect:
 	res SEEDED, a ; clear mon's leech seed status
 	ld [de], a
 	ret
+
+FlashEffect:
+    ;values for the enemy's turn
+    ld de, wPlayerMoveEffect
+    ldh a, [hWhoseTurn]
+    and a
+    jr z, .next
+    ; values for the player's turn
+    ld de, wEnemyMoveEffect
+.next
+    ld a, ACCURACY_DOWN1_EFFECT
+    ld [de], a
+    push de
+    call StatModifierDownEffect ; stat lowering function
+    pop de
+    ld a, SPECIAL_UP1_EFFECT
+    ld [de], a
+    push de
+    call StatModifierUpEffect ; stat raising function
+    pop de
+    ld a, FLASH_EFFECT
+    ld [de], a
+    ret
 	
 TriAttackEffect:
 	ld b, BURN_SIDE_EFFECT1
@@ -201,7 +224,7 @@ TriAttackEffect:
 	jr c, .gotStatusEffect
 	inc b ; PARALYZE_SIDE_EFFECT1
 .gotStatusEffect
-	ld a, [H_WHOSETURN] ; check if it is the player's turn or the opponent's
+	ld a, [hWhoseTurn] ; check if it is the player's turn or the opponent's
 	and a
 	ld a, b ; get the effect we chose earlier
 	jr nz, .opponent
