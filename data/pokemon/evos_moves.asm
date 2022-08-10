@@ -313,6 +313,7 @@ ExeggutorEvosMoves:
 	db 28, LEECH_SEED
 	db 30, STOMP
 	db 32, STUN_SPORE
+	db 35, EGG_BOMB
 	db 37, POISONPOWDER
 	db 42, SOLARBEAM
 	db 48, SLEEP_POWDER
@@ -337,6 +338,7 @@ ExeggcuteEvosMoves:
 	db 25, REFLECT
 	db 28, LEECH_SEED
 	db 32, STUN_SPORE
+	db 35, EGG_BOMB
 	db 37, POISONPOWDER
 	db 42, SOLARBEAM
 	db 48, SLEEP_POWDER
@@ -662,8 +664,10 @@ ChanseyEvosMoves:
 ; Evolutions
 	db 0
 ; Learnset
+	db 10, SOFTBOILED
 	db 24, SING
 	db 30, GROWL
+	db 35, EGG_BOMB
 	db 38, MINIMIZE
 	db 44, DEFENSE_CURL
 	db 48, LIGHT_SCREEN
