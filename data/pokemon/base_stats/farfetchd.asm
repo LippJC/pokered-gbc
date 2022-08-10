@@ -1,6 +1,6 @@
 	db DEX_FARFETCHD ; pokedex id
 
-	db  52,  65,  55,  60,  58
+	db  62,  90,  65,  70,  68
 	;   hp  atk  def  spd  spc
 
 	db NORMAL, FLYING ; type
@@ -17,7 +17,7 @@
 	tmhm RAZOR_WIND,   SWORDS_DANCE, WHIRLWIND,    TOXIC,        BODY_SLAM,    \
 	     TAKE_DOWN,    DOUBLE_EDGE,  RAGE,         MIMIC,        DOUBLE_TEAM,  \
 	     REFLECT,      BIDE,         MIRROR_MOVE,  SWIFT,        SKULL_BASH,   \
-	     REST,         SUBSTITUTE,   CUT,          FLY
+	     SHARPEN,      REST,         SUBSTITUTE,   CUT,          FLY
 	; end
 
 	db BANK(FarfetchdPicFront)

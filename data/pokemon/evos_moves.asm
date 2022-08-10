@@ -764,6 +764,7 @@ DrowzeeEvosMoves:
 	db 29, POISON_GAS
 	db 32, PSYCHIC_M
 	db 37, MEDITATE
+	db 40, DREAM_EATER
 	db 0
 
 GolemEvosMoves:
@@ -917,6 +918,7 @@ FarfetchdEvosMoves:
 	db 7, LEER
 	db 15, FURY_ATTACK
 	db 23, SWORDS_DANCE
+	db 27, FOCUS_ENERGY
 	db 31, AGILITY
 	db 39, SLASH
 	db 0
@@ -1604,6 +1606,7 @@ HypnoEvosMoves:
 	db 33, POISON_GAS
 	db 37, PSYCHIC_M
 	db 43, MEDITATE
+	db 45, DREAM_EATER
 	db 0
 
 GolbatEvosMoves:

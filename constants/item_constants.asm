@@ -208,7 +208,7 @@ ENDM
 	add_tm SWIFT        ; $EF
 	add_tm SKULL_BASH   ; $F0
 	add_tm FIRE_PUNCH	; $F1
-	add_tm DREAM_EATER  ; $F2
+	add_tm SHARPEN	    ; $F2
 	add_tm SKY_ATTACK   ; $F3
 	add_tm REST         ; $F4
 	add_tm THUNDER_WAVE ; $F5
