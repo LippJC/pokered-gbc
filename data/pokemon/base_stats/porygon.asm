@@ -17,8 +17,8 @@
 	tmhm TOXIC,        TAKE_DOWN,    DOUBLE_EDGE,  ICE_BEAM,     BLIZZARD,     \
 	     HYPER_BEAM,   RAGE,         THUNDERBOLT,  THUNDER,      PSYCHIC_M,    \
 	     TELEPORT,     MIMIC,        DOUBLE_TEAM,  REFLECT,      BIDE,         \
-	     MIRROR_MOVE,  SWIFT,        SKULL_BASH,   REST,         THUNDER_WAVE, \
-		 PSYWAVE,      TRI_ATTACK,   SUBSTITUTE,   FLASH
+	     MIRROR_MOVE,  SWIFT,        SKULL_BASH,   SHARPEN,      REST,         \
+		 THUNDER_WAVE, PSYWAVE,      TRI_ATTACK,   SUBSTITUTE,   FLASH
 	; end
 
 	db BANK(PorygonPicFront)
