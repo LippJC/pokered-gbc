@@ -88,3 +88,4 @@ MoveEffectPointerTable:
 	dw DisableEffect             ; DISABLE_EFFECT
 	dw FlashEffect				 ; FLASH_EFFECT
 	dw TriAttackEffect			 ; TRI_ATTACK_EFFECT
+	dw SharpenEffect			 ; SHARPEN_EFFECT

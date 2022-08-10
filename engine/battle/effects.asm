@@ -214,6 +214,34 @@ FlashEffect:
     ld [de], a
     ret
 	
+SharpenEffect:
+    ;values for the enemy's turn
+    ld de, wPlayerMoveEffect
+    ldh a, [hWhoseTurn]
+    and a
+    jr z, .next
+    ; values for the player's turn
+    ld de, wEnemyMoveEffect
+.next
+    ld a, ATTACK_UP1_EFFECT
+    ld [de], a
+    push de
+    call StatModifierUpEffect ; stat raising function
+    pop de
+    ld a, SPECIAL_UP1_EFFECT
+    ld [de], a
+    push de
+    call StatModifierUpEffect ; stat raising function
+    pop de
+	ld a, DEFENSE_UP1_EFFECT
+    ld [de], a
+    push de
+    call StatModifierUpEffect ; stat raising function
+    pop de
+    ld a, SHARPEN_EFFECT
+    ld [de], a
+    ret
+
 TriAttackEffect:
 	ld b, BURN_SIDE_EFFECT1
 	call BattleRandom ; grab a random number

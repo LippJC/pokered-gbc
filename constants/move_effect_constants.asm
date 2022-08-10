@@ -93,3 +93,5 @@
 	const DISABLE_EFFECT             ; $56
 	const FLASH_EFFECT				 ; $57
 	const TRI_ATTACK_EFFECT			 ; $58
+	const SHARPEN_EFFECT			 ; $59
+	
