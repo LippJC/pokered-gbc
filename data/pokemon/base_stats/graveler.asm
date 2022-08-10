@@ -17,8 +17,8 @@
 	tmhm MEGA_PUNCH,   TOXIC,        BODY_SLAM,    TAKE_DOWN,    DOUBLE_EDGE,  \
 	     SUBMISSION,   COUNTER,      SEISMIC_TOSS, RAGE,         EARTHQUAKE,   \
 	     FISSURE,      DIG,          MIMIC,        DOUBLE_TEAM,  BIDE,         \
-	     METRONOME,    SELFDESTRUCT, FIRE_BLAST,   FIRE_PUNCH,   REST,         \
-		 EXPLOSION,    ROCK_SLIDE,   SUBSTITUTE,   STRENGTH
+	     METRONOME,    SELFDESTRUCT, FIRE_BLAST,   REST,         EXPLOSION,    \
+	     ROCK_SLIDE,   SUBSTITUTE,   STRENGTH
 	; end
 
 	db BANK(GravelerPicFront)

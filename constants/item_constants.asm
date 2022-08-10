@@ -207,7 +207,7 @@ ENDM
 	add_tm FIRE_BLAST   ; $EE
 	add_tm SWIFT        ; $EF
 	add_tm SKULL_BASH   ; $F0
-	add_tm FIRE_PUNCH	; $F1
+	add_tm SOFTBOILED   ; $F1
 	add_tm SHARPEN	    ; $F2
 	add_tm SKY_ATTACK   ; $F3
 	add_tm REST         ; $F4

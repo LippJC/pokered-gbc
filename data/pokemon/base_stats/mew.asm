@@ -22,7 +22,7 @@
 	     EARTHQUAKE,   FISSURE,      DIG,          PSYCHIC_M,    TELEPORT,     \
 	     MIMIC,        DOUBLE_TEAM,  REFLECT,      BIDE,         METRONOME,    \
 	     SELFDESTRUCT, MIRROR_MOVE,  FIRE_BLAST,   SWIFT,        SKULL_BASH,   \
-	     FIRE_PUNCH,   SHARPEN,      SKY_ATTACK,   REST,         THUNDER_WAVE, \
+	     SOFTBOILED,   SHARPEN,      SKY_ATTACK,   REST,         THUNDER_WAVE, \
 	     PSYWAVE,      EXPLOSION,    ROCK_SLIDE,   TRI_ATTACK,   SUBSTITUTE,   \
 	     CUT,          FLY,          SURF,         STRENGTH,     FLASH,        \
 	     UNUSED

@@ -18,8 +18,8 @@
 	     DOUBLE_EDGE,  HYPER_BEAM,   SUBMISSION,   COUNTER,      SEISMIC_TOSS, \
 	     RAGE,         MEGA_DRAIN,   THUNDERBOLT,  THUNDER,      PSYCHIC_M,    \
 	     MIMIC,        DOUBLE_TEAM,  BIDE,         METRONOME,    SELFDESTRUCT, \
-	     SKULL_BASH,   FIRE_PUNCH,   REST,         PSYWAVE,      \
-		 EXPLOSION,    SUBSTITUTE,   STRENGTH
+	     SKULL_BASH,   REST,         PSYWAVE,      EXPLOSION,    \
+	     SUBSTITUTE,   STRENGTH
 	; end
 
 	db BANK(GengarPicFront)

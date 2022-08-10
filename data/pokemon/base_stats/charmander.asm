@@ -18,7 +18,7 @@
 	     TAKE_DOWN,    DOUBLE_EDGE,  SUBMISSION,   COUNTER,      SEISMIC_TOSS, \
 	     RAGE,         DRAGON_RAGE,  DIG,          MIMIC,        DOUBLE_TEAM,  \
 	     REFLECT,      BIDE,         FIRE_BLAST,   SWIFT,        SKULL_BASH,   \
-	     FIRE_PUNCH,   REST,         SUBSTITUTE,   CUT,          STRENGTH
+	     REST,         SUBSTITUTE,   CUT,          STRENGTH
 	; end
 
 	db BANK(CharmanderPicFront)
