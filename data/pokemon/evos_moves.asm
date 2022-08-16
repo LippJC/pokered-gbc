@@ -313,6 +313,7 @@ ExeggutorEvosMoves:
 	db 28, LEECH_SEED
 	db 30, STOMP
 	db 32, STUN_SPORE
+	db 35, EGG_BOMB
 	db 37, POISONPOWDER
 	db 42, SOLARBEAM
 	db 48, SLEEP_POWDER
@@ -337,6 +338,7 @@ ExeggcuteEvosMoves:
 	db 25, REFLECT
 	db 28, LEECH_SEED
 	db 32, STUN_SPORE
+	db 35, EGG_BOMB
 	db 37, POISONPOWDER
 	db 42, SOLARBEAM
 	db 48, SLEEP_POWDER
@@ -662,8 +664,10 @@ ChanseyEvosMoves:
 ; Evolutions
 	db 0
 ; Learnset
+	db 10, SOFTBOILED
 	db 24, SING
 	db 30, GROWL
+	db 35, EGG_BOMB
 	db 38, MINIMIZE
 	db 44, DEFENSE_CURL
 	db 48, LIGHT_SCREEN
@@ -760,6 +764,7 @@ DrowzeeEvosMoves:
 	db 29, POISON_GAS
 	db 32, PSYCHIC_M
 	db 37, MEDITATE
+	db 40, DREAM_EATER
 	db 0
 
 GolemEvosMoves:
@@ -913,6 +918,7 @@ FarfetchdEvosMoves:
 	db 7, LEER
 	db 15, FURY_ATTACK
 	db 23, SWORDS_DANCE
+	db 27, FOCUS_ENERGY
 	db 31, AGILITY
 	db 39, SLASH
 	db 0
@@ -1600,6 +1606,7 @@ HypnoEvosMoves:
 	db 33, POISON_GAS
 	db 37, PSYCHIC_M
 	db 43, MEDITATE
+	db 45, DREAM_EATER
 	db 0
 
 GolbatEvosMoves:

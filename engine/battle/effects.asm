@@ -191,6 +191,77 @@ ExplodeEffect:
 	ld [de], a
 	ret
 
+FlashEffect:
+    ;values for the enemy's turn
+    ld de, wPlayerMoveEffect
+    ldh a, [hWhoseTurn]
+    and a
+    jr z, .next
+    ; values for the player's turn
+    ld de, wEnemyMoveEffect
+.next
+    ld a, ACCURACY_DOWN1_EFFECT
+    ld [de], a
+    push de
+    call StatModifierDownEffect ; stat lowering function
+    pop de
+    ld a, SPECIAL_UP1_EFFECT
+    ld [de], a
+    push de
+    call StatModifierUpEffect ; stat raising function
+    pop de
+    ld a, FLASH_EFFECT
+    ld [de], a
+    ret
+	
+SharpenEffect:
+    ;values for the enemy's turn
+    ld de, wPlayerMoveEffect
+    ldh a, [hWhoseTurn]
+    and a
+    jr z, .next
+    ; values for the player's turn
+    ld de, wEnemyMoveEffect
+.next
+    ld a, ATTACK_UP1_EFFECT
+    ld [de], a
+    push de
+    call StatModifierUpEffect ; stat raising function
+    pop de
+    ld a, SPECIAL_UP1_EFFECT
+    ld [de], a
+    push de
+    call StatModifierUpEffect ; stat raising function
+    pop de
+	ld a, DEFENSE_UP1_EFFECT
+    ld [de], a
+    push de
+    call StatModifierUpEffect ; stat raising function
+    pop de
+    ld a, SHARPEN_EFFECT
+    ld [de], a
+    ret
+
+TriAttackEffect:
+	ld b, BURN_SIDE_EFFECT1
+	call BattleRandom ; grab a random number
+	cp 86 ; 85 / 255 chance = ~30%
+	jr c, .gotStatusEffect
+	inc b ; FREEZE_SIDE_EFFECT
+	cp 171 ; (171-86) / 256 chance = ~30%
+	jr c, .gotStatusEffect
+	inc b ; PARALYZE_SIDE_EFFECT1
+.gotStatusEffect
+	ld a, [hWhoseTurn] ; check if it is the player's turn or the opponent's
+	and a
+	ld a, b ; get the effect we chose earlier
+	jr nz, .opponent
+	ld [wPlayerMoveEffect], a ; store it as the player's move effect if player's turn
+	jr FreezeBurnParalyzeEffect
+.opponent
+	ld [wEnemyMoveEffect], a ; store it as the enemy's move effect if enemy's turn
+; fallthrough to FreezeBurnParalyzeEffect
+
 FreezeBurnParalyzeEffect:
 	xor a
 	ld [wAnimationType], a
@@ -962,7 +1033,7 @@ TwoToFiveAttacksEffect:
 	ld [bc], a
 	ret
 .twineedle
-	ld a, POISON_SIDE_EFFECT1
+	ld a, POISON_SIDE_EFFECT2
 	ld [hl], a ; set Twineedle's effect to poison effect
 	jr .saveNumberOfHits
 
