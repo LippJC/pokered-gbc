@@ -1,26 +1,14 @@
 Route14Mons:
 	db 15 ; grass encounter rate
-IF DEF(_RED)
-	db 24, ODDISH
-	db 26, PIDGEY
-	db 23, DITTO
-	db 24, VENONAT
-	db 22, ODDISH
-	db 26, VENONAT
 	db 26, ODDISH
-	db 30, GLOOM
-ENDC
-IF DEF(_BLUE)
-	db 24, BELLSPROUT
-	db 26, PIDGEY
-	db 23, DITTO
-	db 24, VENONAT
-	db 22, BELLSPROUT
-	db 26, VENONAT
 	db 26, BELLSPROUT
-	db 30, WEEPINBELL
-ENDC
-	db 28, PIDGEOTTO
+	db 25, DITTO	 ; 15.2
+	db 24, VENONAT	 ;  9.8
+	db 27, ODDISH	 ; 29.7
+	db 27, BELLSPROUT; 29.7
+	db 29, WEEPINBELL;  5.1
+	db 29, GLOOM	 ;  5.1
 	db 30, PIDGEOTTO
+	db 33, PIDGEOTTO ;  5.5
 
 	db 0 ; water encounter rate

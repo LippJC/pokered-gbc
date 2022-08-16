@@ -1,23 +1,14 @@
 Route2Mons:
-	db 25 ; grass encounter rate
-	db  3, RATTATA
-	db  3, PIDGEY
-	db  4, PIDGEY
-	db  4, RATTATA
-	db  5, PIDGEY
-IF DEF(_RED)
-	db  3, WEEDLE
-	db  2, RATTATA
-	db  5, RATTATA
-	db  4, WEEDLE
-	db  5, WEEDLE
-ENDC
-IF DEF(_BLUE)
-	db  3, CATERPIE
-	db  2, RATTATA
-	db  5, RATTATA
-	db  4, CATERPIE
-	db  5, CATERPIE
-ENDC
+    db 25 ; grass encounter rate
+    db  3, RATTATA
+    db  3, PIDGEY
+    db  4, PIDGEY
+    db  3, WEEDLE   ;  9.8
+    db  5, PIDGEY
+    db  3, CATERPIE ;  9.8
+    db  4, RATTATA  ; 25.0
+    db  4, SPEAROW
+    db  6, PIDGEY   ; 49.2
+    db  6, SPEAROW  ;  6.3
 
 	db 0 ; water encounter rate
