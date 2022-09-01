@@ -1,25 +1,14 @@
 ZoneMons3:
 	db 30 ; grass encounter rate
-IF DEF(_RED)
-	db 25, NIDORAN_M
-	db 26, DODUO
-	db 23, VENONAT
-	db 24, EXEGGCUTE
-	db 33, NIDORINO
-	db 26, EXEGGCUTE
 	db 25, NIDORAN_F
-ENDC
-IF DEF(_BLUE)
-	db 25, NIDORAN_F
-	db 26, DODUO
+	db 31, DODRIO
 	db 23, VENONAT
-	db 24, EXEGGCUTE
+	db 24, DODUO
 	db 33, NIDORINA
-	db 26, EXEGGCUTE
-	db 25, NIDORAN_M
-ENDC
-	db 31, VENOMOTH
-	db 26, TAUROS
+	db 26, CHANSEY
+	db 25, KANGASKHAN
+	db 31, KANGASKHAN
+	db 26, CHANSEY
 	db 28, KANGASKHAN
 
 	db 0 ; water encounter rate
