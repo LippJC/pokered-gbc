@@ -1,53 +1,61 @@
 # Pokémon Red and Blue [![Build Status][travis-badge]][travis]
 
 <<<<<<< Updated upstream
-Changelog from Pokémon:
-
-
-
-
-
-
-
-
-
-
-
-
 
 =======
 Changelog of Bug Fixes:
-- 100% Accuracy Miss Glitch
-- Substitute 0 HP Glitch
-- Dual-Type Effectiveness Misreported
-- HP Drain Hit Glitch
-- PP Restore Glitch
-- Bide Damage in Link Battles
-- Struggle PP up Glitch
-- Cool Trainer F AI Swap Pokemon Glitch
-- Blaine Super Potion AI Glitch
-- Transform Pokemon Ditto Glitch
-- Status Curing Items Remove Stat Modifiers Glitch
+- 100% Accuracy Issue: All guarantee-hit moves had a 255/256 hit rate.
+- Focus Energy Glitch: This one is a doozy.  The original code had a bug so Focus Energy would
+actually 1/4 the crit rate.  This fix restores that value, however, if left unchecked, several
+Pokemon with high speed stats would have an effective 100% crit rate.  A cap of 50% was
+instituted to prevent this.
+- Dual-Type Effectiveness Misreported: Dual-Type Pokemon would have effectiveness reported
+incorrectly.  This has been resolved.
+- HP Drain Moves Should Cancel Substitute: It didn't, now it does.
+- PP Restore Bug: For some reason, this item didn't account for extra PP from PP Ups used.
+- Nidorino Sound Bug: The audio on the intro was for a Nidorina.
+- Prof Oak Poke Ball Text Bug: Fixed a line of dialogue that overwrote instead of scrolling.
+- Route 8 Gate Guard Bug: When stopped by the guard, the player wouldn't look at the guard.
+- Game Corner Hidden Item Bug: One hidden item was supposed to have 40 coins instead of 20.
+- Slot Machine Issues: The "lucky" machine was bugged and could sometimes not appear.  Also the
+ability to stop the machines on a "7" or a "BAR" was bugged.  Probably by design, considering it's
+gambling, but it's been changed to the same as the other machines.
 
-- Cinnabar Island / MissingNo Glitch
-- Lt. Surge Trash Can Glitch
-- NPC Overworld Walking Glitch
-- NPC Movement Delay
-- Trainer Battle Text Overwrite Glitch***
-- Erroneous Stone Evolutions can Pokemon to evolve glitch
-- Smoke from Strength not showing up***
-- Surf Collision Check Glitch
-- Slot Machine 7s Glitches
-- GetName HM/TM Fix***
-- "ED" Tile on bad emulators fix
-- 
+Changelog of Sprites:
+- Articuno Back Sprites
+- Many Front Sprites were altered to pick the best version of the Red or Green version.
+1 or 2 Spaceworld sprites were used, but the intention is to retain the original art style.
+- Used several adjusted sprites from https://github.com/Vortyne/pureRGB.  Thanks Vortiene!
 
-- not in yet:
-- Random Items Cause Evolution
-- wd732 Cycling***
-- Move Swap Sound????
-- EXP All????
->>>>>>> Stashed changes
+Changelog of Routes:
+- Adjusted all areas to make <5% rare Pokemon have a >5% encounter rate.
+- Altered all route specific version-exclusive Pokemon to be (generally) included on said routes.
+- Heavily altered the Safari Zone to make the rare Pokemon specific to each area.
+	Center: Pinsir
+	East: Scyther
+	North: Tauros
+	West: Kangaskhan / Chancey
+
+- NOT IMPLEMENTED YET: Design / adjust some of the worst sprites (Moltres / Poliwrath line
+Machamp line / Raichu)  
+- NOT IMPLEMENTED YET: 
+- NOT IMPLEMENTED YET:
+
+- NOT IMPLEMENTED YET: Mew - Vermilion Truck Push (learn scripting)
+- NOT IMPLEMENTED YET: Oak Fight Enable
+- NOT IMPLEMENTED YET: Pokemon Dream Sequence / TPP Fight
+- NOT IMPLEMENTED YET: Figure out scripting for Starters (post game)
+- NOT IMPLEMENTED YET: Figure out scripting for Eevee (post game)
+- NOT IMPLEMENTED YET: Figure out scripting for Fossil (post game)
+- NOT IMPLEMENTED YET: Figure out scripting for Fighting Dojo Pokemon (post game)
+- NOT IMPLEMENTED YET: Menu Driven Choices (Yellow Sprites / Certain RG sprites) (see PureRGB)
+- NOT IMPLEMENTED YET: Battle Mechanics? (Maybe Menu Driven?)
+- NOT IMPLEMENTED YET: Total retooling of Pokemon locations (Maybe Menu Driven?)
+
+
+
+
+
 
 
 
