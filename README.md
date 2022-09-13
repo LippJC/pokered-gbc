@@ -38,7 +38,7 @@ Changelog of Routes:
 
 - NOT IMPLEMENTED YET: Design / adjust some of the worst sprites (Moltres / Poliwrath line
 Machamp line / Raichu)  
-- NOT IMPLEMENTED YET: 
+- NOT IMPLEMENTED YET: Title Screen
 - NOT IMPLEMENTED YET:
 
 - NOT IMPLEMENTED YET: Mew - Vermilion Truck Push (learn scripting)
