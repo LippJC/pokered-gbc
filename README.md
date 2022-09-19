@@ -36,11 +36,15 @@ Changelog of Routes:
 	North: Tauros
 	West: Kangaskhan / Chancey
 
+
+Changelog of Pokemon:
+- All trade evolution Pokemon were altered to evolve around the same levels as starter Pokemon
+(16-18, and 32-36).  Move levels might have been altered slighlty around that.
+- All 
+
 - NOT IMPLEMENTED YET: Design / adjust some of the worst sprites (Moltres / Poliwrath line
 Machamp line / Raichu)  
-- NOT IMPLEMENTED YET: Title Screen
-- NOT IMPLEMENTED YET:
-
+- Title Screen Altered to "Dx Version" This is a placeholder.
 - NOT IMPLEMENTED YET: Mew - Vermilion Truck Push (learn scripting)
 - NOT IMPLEMENTED YET: Oak Fight Enable
 - NOT IMPLEMENTED YET: Pokemon Dream Sequence / TPP Fight
