@@ -26,6 +26,25 @@ Changelog of Sprites:
 - Many Front Sprites were altered to pick the best version of the Red or Green version.
 1 or 2 Spaceworld sprites were used, but the intention is to retain the original art style.
 - Used several adjusted sprites from https://github.com/Vortyne/pureRGB.  Thanks Vortiene!
+- HUGE changes to the palettes for specific Pokemon.
+	The red Pokemon palette has been tweaked to be more orange, less red.
+	All blue Pokemon were switched from the cyan palette to the blue palette.
+	Butterfree switched back to the cyan palette after QA testing
+	Custom orange palette created for Dragonite (was brown) and given to Weedle (was yellow)
+	Rattata switched from grey to purple palette, Raticate switched from grey to brown palette
+	Growlithe switched from brown to red palette
+	Golem switched from grey to brown palette
+	Voltorb and Electrode switched from yellow to red palette
+	Cubone and Marowak switched from grey to brown palette
+	Starmie switched from grey to purple palette
+	Jynx switched from "mew" to red palette
+	Tauros switched from grey to brown palette
+	Eevee switched from grey to brown palette
+	Custom red and blue palette created for Porygon
+	Dratini switched from grey to blue palette
+	Mewtwo switched from "mew" to purple palette
+	Mew switched from "mew" to pink palette
+	
 
 Changelog of Routes:
 - Adjusted all areas to make <5% rare Pokemon have a >5% encounter rate.
